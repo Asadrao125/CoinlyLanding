@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coinly — Track your spending, simply.</title>
+<meta name="description" content="Coinly is a personal expense &amp; income tracker for Android. Multi-wallet tracking, smart shared-category budgets, Google Drive backup, and clear spending insights.">
+<meta name="theme-color" content="#083B35">
+
+<meta property="og:title" content="Coinly — Track your spending, simply.">
+<meta property="og:description" content="Multi-wallet tracking, smart budgets, and private Google Drive backup for Android.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav container">
+    <a href="#home" class="brand">
+      <span class="brand-mark">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="url(#navGrad)"/>
+          <path d="M15 8.5C11.4 8.5 8.5 11.4 8.5 15C8.5 18.6 11.4 21.5 15 21.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M15 11.7V18.3M12.9 13.2C12.9 12.2 13.8 11.6 15 11.6C16.3 11.6 17.1 12.2 17.1 13.1C17.1 15 12.9 14.6 12.9 16.5C12.9 17.4 13.8 18 15 18C16.2 18 17.1 17.4 17.1 16.4" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="navGrad" x1="0" y1="0" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1FC8B0"/>
+              <stop offset="1" stop-color="#083B35"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-name">Coinly</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <a href="#cta" class="btn btn-dark btn-nav">Get early access</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Coming soon on Google Play</span>
+      <h1>Know exactly<br>where your money<br><span class="text-gradient">actually goes.</span></h1>
+      <p class="hero-sub">
+        Coinly is a personal expense &amp; income tracker for Android. Track spending across
+        multiple wallets, set budgets that warn you before you go over, back everything up to
+        your own Google Drive — and finally see the full picture.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-dark btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 20.5V3.5C3 2.8 3.7 2.3 4.4 2.6L20.4 11.1C21 11.4 21 12.3 20.4 12.6L4.4 21.1C3.7 21.4 3 20.9 3 20.2V20.5Z" fill="white"/></svg>
+          Join the waitlist
+        </a>
+        <div class="store-badge-fake" aria-disabled="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3L15.5 12L3 21V3Z" fill="#8A8DA6"/><path d="M15.5 12L18.8 9.9L21.4 11.4C22.2 11.8 22.2 12.9 21.4 13.3L18.8 14.8L15.5 12Z" fill="#8A8DA6"/></svg>
+          <div><span class="fake-label">Coming soon on</span><strong>Google Play</strong></div>
+        </div>
+      </div>
+      <p class="hero-microcopy">No spam. One email when Coinly launches — that's it.</p>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen home-screen">
+          <div class="mock-status">
+            <span>9:41</span>
+            <span class="mock-icons">●●●</span>
+          </div>
+          <div class="mock-greeting">
+            <span>Hi, Asad</span>
+            <div class="mock-avatar"></div>
+          </div>
+          <div class="balance-card">
+            <span class="balance-label">Total Balance</span>
+            <span class="balance-value">Rs. 84,320</span>
+            <div class="wallet-chips">
+              <span class="chip">Cash</span>
+              <span class="chip">Bank</span>
+              <span class="chip">Savings</span>
+            </div>
+          </div>
+          <div class="donut-row">
+            <div class="donut"></div>
+            <div class="donut-legend">
+              <div><span class="dot dot-green"></span>Income <b>Rs. 62k</b></div>
+              <div><span class="dot dot-red"></span>Expense <b>Rs. 38k</b></div>
+              <div><span class="dot dot-amber"></span>Budget left <b>62%</b></div>
+            </div>
+          </div>
+          <div class="mock-list">
+            <div class="mock-row">
+              <span class="row-dot" style="background:#0EA5A0"></span>
+              <div class="row-text"><b>Groceries</b><small>Today · Cash</small></div>
+              <span class="row-amt neg">-Rs. 2,150</span>
+            </div>
+            <div class="mock-row">
+              <span class="row-dot" style="background:#F2A93B"></span>
+              <div class="row-text"><b>Freelance</b><small>Today · Bank</small></div>
+              <span class="row-amt pos">+Rs. 15,000</span>
+            </div>
+            <div class="mock-row">
+              <span class="row-dot" style="background:#E15B64"></span>
+              <div class="row-text"><b>Transport</b><small>Yesterday · Cash</small></div>
+              <span class="row-amt neg">-Rs. 480</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-card float-budget">
+        <span class="float-title">Discretionary budget</span>
+        <div class="float-bar"><div class="float-bar-fill" style="width:68%"></div></div>
+        <span class="float-sub">Rs. 13,600 of Rs. 20,000</span>
+      </div>
+      <div class="float-card float-backup">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3L21 8V16L12 21L3 16V8L12 3Z" stroke="#0EA5A0" stroke-width="1.6"/></svg>
+        <span>Backed up to Drive</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY / TRUST STRIP -->
+  <section class="trust container" id="privacy">
+    <div class="trust-head reveal">
+      <h2>Your data stays yours.</h2>
+      <p>No ad trackers, no data reselling — just your numbers, private by design.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-icon">🔒</div>
+        <h3>Backs up to your own Drive</h3>
+        <p>Backups go straight into your personal Google Drive's hidden app storage — not
+          Coinly's servers. We don't have one.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">🎯</div>
+        <h3>Narrowest permission possible</h3>
+        <p>Backup uses Google's restricted <code>drive.appdata</code> scope — Coinly can never see
+          or touch the rest of your Drive.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">📴</div>
+        <h3>Works fully offline</h3>
+        <p>Every wallet, transaction, and budget lives on your device first. Sync is something you
+          opt into, never something you depend on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Everything you need</span>
+        <h2>Built to answer one question:<br>"where did my money go?"</h2>
+      </div>
+
+      <div class="feature-row reveal">
+        <div class="feature-text">
+          <span class="feature-num">01</span>
+          <h3>Multi-wallet tracking</h3>
+          <p>Keep cash, bank, and savings as separate wallets — each with its own starting
+            balance. Filter your Home and Timeline down to a single wallet whenever you want the
+            narrower view.</p>
+          <ul class="feature-points">
+            <li>Unlimited wallets, unlimited currencies</li>
+            <li>Deleting a wallet always warns you first</li>
+            <li>Every screen respects your active wallet filter</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-phone">
+            <div class="mini-screen">
+              <div class="mini-title">Wallets</div>
+              <div class="wallet-card wc-teal"><span>Cash</span><b>Rs. 12,400</b></div>
+              <div class="wallet-card wc-navy"><span>Bank Account</span><b>Rs. 58,920</b></div>
+              <div class="wallet-card wc-amber"><span>Savings</span><b>Rs. 13,000</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <span class="feature-num">02</span>
+          <h3>Budgets that watch a pool of categories</h3>
+          <p>A Coinly budget isn't tied to one category — group Entertainment + Dining into a
+            single "Discretionary" pool, weekly or monthly, scoped to one wallet or all of them.</p>
+          <ul class="feature-points">
+            <li>Live progress hint while you're still adding the transaction</li>
+            <li>Tap any budget card to expand its per-category breakdown in place</li>
+            <li>Alerts screen tells you when you're near or over</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-phone">
+            <div class="mini-screen">
+              <div class="mini-title">Budgets</div>
+              <div class="budget-card">
+                <div class="budget-top"><span>Discretionary</span><b>68%</b></div>
+                <div class="float-bar"><div class="float-bar-fill" style="width:68%"></div></div>
+                <small>Entertainment + Dining · Monthly</small>
+              </div>
+              <div class="budget-card">
+                <div class="budget-top"><span>Groceries</span><b class="warn">94%</b></div>
+                <div class="float-bar"><div class="float-bar-fill warn" style="width:94%"></div></div>
+                <small>All wallets · Weekly</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reveal">
+        <div class="feature-text">
+          <span class="feature-num">03</span>
+          <h3>A dashboard that actually tells you something</h3>
+          <p>Balance, an income/expense breakdown with week/month/year filters, a budget-alert
+            banner when it matters, and a quick top-categories list — all on Home, no digging.</p>
+          <ul class="feature-points">
+            <li>Category breakdown chart with drill-down into transactions</li>
+            <li>Skeleton loading instead of blank screens</li>
+            <li>Light, Dark, or System theme</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-phone">
+            <div class="mini-screen">
+              <div class="mini-title">Overview</div>
+              <div class="donut-row center">
+                <div class="donut small"></div>
+              </div>
+              <div class="legend-mini">
+                <span><i style="background:#0EA5A0"></i>Food 32%</span>
+                <span><i style="background:#F2A93B"></i>Transport 21%</span>
+                <span><i style="background:#22C55E"></i>Bills 18%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <span class="feature-num">04</span>
+          <h3>Fast enough to actually use every day</h3>
+          <p>One screen for add and edit, expense/income toggle, your own category icon and
+            color, an optional receipt photo, and quick-reuse chips for transactions you log
+            often.</p>
+          <ul class="feature-points">
+            <li>Attach a receipt from camera or gallery</li>
+            <li>Recent transactions, one tap to reuse</li>
+            <li>Custom categories with your own icon &amp; color</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-phone">
+            <div class="mini-screen">
+              <div class="mini-title">Add Transaction</div>
+              <div class="add-amount">Rs. 2,150</div>
+              <div class="add-toggle"><span class="active">Expense</span><span>Income</span></div>
+              <div class="chip-row">
+                <span class="chip small">Groceries</span>
+                <span class="chip small">Fuel</span>
+                <span class="chip small">Coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing container" id="pricing">
+    <div class="section-head reveal">
+      <span class="eyebrow">Simple pricing</span>
+      <h2>Free to start. Upgrade when you're ready.</h2>
+      <p class="section-sub">Placeholder tiers — final pricing goes live alongside the Play Store launch.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Free</h3>
+        <div class="price-amount">Rs. 0<span>/forever</span></div>
+        <p class="price-desc">Everything you need to start tracking today.</p>
+        <ul class="price-features">
+          <li>Up to 2 wallets</li>
+          <li>Unlimited transactions</li>
+          <li>1 active budget</li>
+          <li>Manual Google Drive backup</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline btn-full">Get started</a>
+      </div>
+
+      <div class="price-card featured reveal">
+        <span class="price-badge">Most popular</span>
+        <h3><span class="crown">👑</span> Premium</h3>
+        <div class="price-amount">Rs. 450<span>/month</span></div>
+        <p class="price-desc">For anyone serious about their budget.</p>
+        <ul class="price-features">
+          <li>Unlimited wallets &amp; budgets</li>
+          <li>Automatic Drive backups</li>
+          <li>Advanced insights &amp; charts</li>
+          <li>Receipt photo storage</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#cta" class="btn btn-dark btn-full">Get early access</a>
+      </div>
+
+      <div class="price-card reveal">
+        <span class="price-badge save-badge">Save 30%</span>
+        <h3>Premium Yearly</h3>
+        <div class="price-amount">Rs. 3,780<span>/year</span></div>
+        <p class="price-desc">Everything in Premium, billed once a year.</p>
+        <ul class="price-features">
+          <li>Everything in Premium</li>
+          <li>2 months free vs. monthly</li>
+          <li>Lock in launch pricing</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline btn-full">Get early access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq container" id="faq">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, answered.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Is Coinly free to use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. The core app — unlimited transactions, a couple of wallets, and one budget — is free. A Premium tier will unlock unlimited wallets, automatic backups, and deeper insights.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>When is Coinly launching on Google Play?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Coinly is in final testing right now. Join the waitlist below and you'll get one email the moment it's live — nothing else.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Where is my data stored?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>On your device, first and always. Backups are optional and go directly into your own Google Drive's private app storage — Coinly has no servers of its own and never sees your data.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Can I use multiple currencies or wallets?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Create as many wallets as you need — cash, bank, savings, whatever fits how you actually spend — each with its own starting balance and currency.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>What does a "budget" mean in Coinly?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>A budget watches one or more categories combined into a shared pool — for example "Discretionary" = Entertainment + Dining — weekly or monthly, optionally scoped to a single wallet.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Will there be an iOS version?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Coinly is Android-first for now. If there's enough demand, iOS is on the table down the line.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <div class="container cta-inner reveal">
+      <h2>Be the first to know when Coinly launches.</h2>
+      <p>Drop your email — one notification, no spam, unsubscribe whenever.</p>
+      <form class="waitlist-form" id="waitlistForm">
+        <input type="email" id="waitlistEmail" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-dark">Notify me</button>
+      </form>
+      <p class="cta-status" id="ctaStatus" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="15" fill="url(#footGrad)"/><defs><linearGradient id="footGrad" x1="0" y1="0" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#1FC8B0"/><stop offset="1" stop-color="#083B35"/></linearGradient></defs></svg>
+        </span>
+        <span class="brand-name">Coinly</span>
+      </div>
+      <p>Track your spending, simply.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:raoasad125@gmail.com">raoasad125@gmail.com</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Coinly. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
