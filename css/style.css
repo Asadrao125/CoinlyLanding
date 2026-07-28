@@ -346,12 +346,13 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
 }
 
-.feature-visual.dual { flex-wrap: wrap; gap: 22px; }
+.feature-visual.dual { flex-wrap: wrap; gap: 26px; }
 .mini-phone-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .mini-caption { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); }
-.feature-visual.dual .mini-phone { width: 175px; }
-@media (max-width: 480px) {
-  .feature-visual.dual .mini-phone { width: 138px; }
+.feature-visual.dual .mini-phone { width: 215px; }
+@media (max-width: 520px) {
+  .feature-visual.dual { gap: 14px; }
+  .feature-visual.dual .mini-phone { width: 150px; }
 }
 
 /* ===== Pricing ===== */
