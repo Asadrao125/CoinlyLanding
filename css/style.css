@@ -326,6 +326,14 @@ img { max-width: 100%; display: block; }
   background: #000;
 }
 
+.feature-visual.dual { flex-wrap: wrap; gap: 22px; }
+.mini-phone-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.mini-caption { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); }
+.feature-visual.dual .mini-phone { width: 175px; }
+@media (max-width: 480px) {
+  .feature-visual.dual .mini-phone { width: 138px; }
+}
+
 /* ===== Pricing ===== */
 .pricing { padding: 40px 24px 100px; }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
