@@ -220,15 +220,39 @@ img { max-width: 100%; display: block; }
 }
 .phone-screen {
   width: 100%;
-  /* Matches the real screenshots' own aspect ratio (720x1600) so the full
-     image shows with no cropping. */
+  /* Matches the real screenshots' own aspect ratio so the full image shows
+     with no cropping. */
   aspect-ratio: 9 / 20;
   border-radius: 32px;
   overflow: hidden;
   position: relative;
   background: #000;
+  display: flex;
+  flex-direction: column;
 }
-.phone-screen img, .mini-screen img {
+
+/* Dummy status bar - the real one (carrier/wifi/battery %) is cropped out of
+   the screenshot itself; this fills that space with a clean, generic one so
+   rounded top corners never clip real on-screen content. */
+.fake-statusbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--device-bg);
+  color: var(--device-text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.phone-screen .fake-statusbar { height: 34px; padding: 0 18px; font-size: 0.78rem; }
+.mini-screen .fake-statusbar { height: 26px; padding: 0 14px; font-size: 0.62rem; }
+.fake-statusbar .status-icons { display: flex; align-items: center; gap: 5px; }
+.fake-statusbar .status-icons svg { display: block; }
+.phone-screen .fake-statusbar .status-icons svg { height: 11px; width: auto; }
+.mini-screen .fake-statusbar .status-icons svg { height: 8px; width: auto; }
+
+.shot { position: relative; flex: 1; min-height: 0; overflow: hidden; }
+.shot img {
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: top center;
@@ -324,6 +348,8 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   position: relative;
   background: #000;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-visual.dual { flex-wrap: wrap; gap: 22px; }

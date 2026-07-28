@@ -21,6 +21,22 @@
 
 <svg style="display:none" aria-hidden="true">
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.7-8.9A5.5 5.5 0 0 1 17 8a4 4 0 0 1 .5 8H7Z"/><path d="m9 14 3-3 3 3M12 11v8"/></symbol>
+  <symbol id="i-signal" viewBox="0 0 20 14" fill="currentColor">
+    <rect x="0" y="9" width="3.2" height="5" rx="0.6"/>
+    <rect x="5.6" y="6" width="3.2" height="8" rx="0.6"/>
+    <rect x="11.2" y="3" width="3.2" height="11" rx="0.6"/>
+    <rect x="16.8" y="0" width="3.2" height="14" rx="0.6"/>
+  </symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 18" fill="currentColor">
+    <path d="M12 18a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6Z"/>
+    <path d="M7.8 11.9a5.9 5.9 0 0 1 8.4 0l-1.9 1.9a3.3 3.3 0 0 0-4.6 0l-1.9-1.9Z"/>
+    <path d="M3.6 7.7a11.9 11.9 0 0 1 16.8 0l-1.9 1.9a9.3 9.3 0 0 0-13 0L3.6 7.7Z"/>
+  </symbol>
+  <symbol id="i-battery" viewBox="0 0 26 13">
+    <rect x="0.6" y="0.6" width="21.8" height="11.8" rx="2.8" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="23.2" y="4" width="2" height="5" rx="0.8" fill="currentColor"/>
+    <rect x="2.4" y="2.4" width="18.2" height="8.2" rx="1.4" fill="currentColor"/>
+  </symbol>
 </svg>
 
 <div class="noise-overlay" aria-hidden="true"></div>
@@ -88,7 +104,17 @@
       <div class="glow"></div>
       <div class="phone-frame">
         <div class="phone-screen">
-          <img src="assets/screenshots/home.jpg" alt="Coinly Home dashboard showing total balance, income/expense breakdown, and top spending categories" loading="eager">
+          <div class="fake-statusbar">
+            <span>9:41</span>
+            <span class="status-icons">
+              <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+              <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+              <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+            </span>
+          </div>
+          <div class="shot">
+            <img src="assets/screenshots/home.jpg" alt="Coinly Home dashboard showing total balance, income/expense breakdown, and top spending categories" loading="eager">
+          </div>
         </div>
         <div class="float-card float-backup">
           <svg class="ic"><use href="#i-cloud"/></svg>
@@ -149,7 +175,17 @@
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <img src="assets/screenshots/categories.jpg" alt="Coinly Manage Categories screen showing colorful expense categories with icons" loading="lazy">
+              <div class="fake-statusbar">
+                <span>9:41</span>
+                <span class="status-icons">
+                  <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+                  <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+                  <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+                </span>
+              </div>
+              <div class="shot">
+                <img src="assets/screenshots/categories.jpg" alt="Coinly Manage Categories screen showing colorful expense categories with icons" loading="lazy">
+              </div>
             </div>
           </div>
         </div>
@@ -171,7 +207,17 @@
           <div class="mini-phone-group">
             <div class="mini-phone">
               <div class="mini-screen">
-                <img src="assets/screenshots/add-budget.jpg" alt="Coinly Add Budget screen showing weekly/monthly toggle, budget amount, and category selection" loading="lazy">
+                <div class="fake-statusbar">
+                  <span>9:41</span>
+                  <span class="status-icons">
+                    <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+                    <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+                    <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+                  </span>
+                </div>
+                <div class="shot">
+                  <img src="assets/screenshots/add-budget.jpg" alt="Coinly Add Budget screen showing weekly/monthly toggle, budget amount, and category selection" loading="lazy">
+                </div>
               </div>
             </div>
             <span class="mini-caption">Create a budget</span>
@@ -179,7 +225,17 @@
           <div class="mini-phone-group">
             <div class="mini-phone">
               <div class="mini-screen">
-                <img src="assets/screenshots/budget.jpg" alt="Coinly Budget screen showing a Monthly Budget expanded with its per-category breakdown" loading="lazy">
+                <div class="fake-statusbar">
+                  <span>9:41</span>
+                  <span class="status-icons">
+                    <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+                    <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+                    <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+                  </span>
+                </div>
+                <div class="shot">
+                  <img src="assets/screenshots/budget.jpg" alt="Coinly Budget screen showing a Monthly Budget expanded with its per-category breakdown" loading="lazy">
+                </div>
               </div>
             </div>
             <span class="mini-caption">Watch it in one place</span>
@@ -202,7 +258,17 @@
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <img src="assets/screenshots/timeline.jpg" alt="Coinly Timeline screen showing transactions grouped by day with running totals" loading="lazy">
+              <div class="fake-statusbar">
+                <span>9:41</span>
+                <span class="status-icons">
+                  <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+                  <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+                  <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+                </span>
+              </div>
+              <div class="shot">
+                <img src="assets/screenshots/timeline.jpg" alt="Coinly Timeline screen showing transactions grouped by day with running totals" loading="lazy">
+              </div>
             </div>
           </div>
         </div>
@@ -224,7 +290,17 @@
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <img src="assets/screenshots/add-transaction.jpg" alt="Coinly Add Transaction screen showing recent category chips and a live monthly budget hint" loading="lazy">
+              <div class="fake-statusbar">
+                <span>9:41</span>
+                <span class="status-icons">
+                  <svg viewBox="0 0 20 14"><use href="#i-signal"/></svg>
+                  <svg viewBox="0 0 24 18"><use href="#i-wifi"/></svg>
+                  <svg viewBox="0 0 26 13"><use href="#i-battery"/></svg>
+                </span>
+              </div>
+              <div class="shot">
+                <img src="assets/screenshots/add-transaction.jpg" alt="Coinly Add Transaction screen showing recent category chips and a live monthly budget hint" loading="lazy">
+              </div>
             </div>
           </div>
         </div>
