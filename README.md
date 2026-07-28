@@ -12,6 +12,7 @@ terms.html        Terms of service (draft — review before launch)
 css/style.css     All styles (brand colors match the Coinly Android app palette)
 js/script.js      Nav toggle, FAQ accordion, scroll reveal, waitlist form
 assets/           Icons, images
+assets/screenshots/  Real app screenshots used in the hero and feature phone mockups
 ```
 
 ## Running locally
@@ -30,7 +31,8 @@ npx serve .
 
 ## Before launch
 
-- Replace the placeholder phone-mockup screens in `index.html` with real app screenshots.
+- Phone mockups use real screenshots from `assets/screenshots/` — swap them for fresh ones as the
+  app's UI evolves (same filenames, same 720x1600 aspect ratio so nothing reflows).
 - Wire the waitlist form (`js/script.js`) to a real email service (Formspree, Mailchimp,
   ConvertKit, etc.) instead of the `mailto:` fallback.
 - Add the real Google Play link once Coinly is published, and swap the "Coming soon" badge in

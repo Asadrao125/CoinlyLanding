@@ -20,15 +20,6 @@
 <body>
 
 <svg style="display:none" aria-hidden="true">
-  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v2M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H6a2 2 0 0 1-2-2Z"/><path d="M17 14h.01"/></symbol>
-  <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-1.5 1-2 3-2 5s.5 4 2 5v8"/></symbol>
-  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M3 4h2l2.4 11.5a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"/></symbol>
-  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M10.5 15.5 3 12.7c-.6-.2-.6-1 0-1.3L20 5c.6-.2 1.2.4 1 1l-5.8 15.4c-.2.6-1 .6-1.3 0L11 15.5Z"/></symbol>
-  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></symbol>
-  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 19c0-3.3 3-5.2 6.5-5.2s6.5 1.9 6.5 5.2M17 8.2a3 3 0 1 1 0 6M21.5 19c0-2.6-2-4.3-4.5-4.9"/></symbol>
-  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 4 1.5 5.5 1.5 5.5H4.5S6 13 6 9Z"/><path d="M9.5 17.5a2.5 2.5 0 0 0 5 0"/></symbol>
-  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
-  <symbol id="i-warning" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.7-8.9A5.5 5.5 0 0 1 17 8a4 4 0 0 1 .5 8H7Z"/><path d="m9 14 3-3 3 3M12 11v8"/></symbol>
 </svg>
 
@@ -96,56 +87,8 @@
     <div class="hero-visual reveal" aria-hidden="true">
       <div class="glow"></div>
       <div class="phone-frame">
-        <div class="phone-notch"></div>
-        <div class="phone-screen home-screen">
-          <div class="mock-status">
-            <span>9:41</span>
-            <span class="mock-icons">●●●</span>
-          </div>
-          <div class="mock-greeting">
-            <span>Hi, Alex</span>
-            <svg class="ic mock-bell"><use href="#i-bell"/></svg>
-          </div>
-
-          <div class="balance-block">
-            <span class="balance-label">Total Balance</span>
-            <span class="balance-value">PKR 30,500.00</span>
-            <div class="balance-meta-row">
-              <span class="chip"><svg class="ic ic-sm"><use href="#i-wallet"/></svg>All Wallets · PKR</span>
-              <svg class="ic ic-sm" style="color:var(--text-secondary)"><use href="#i-chevron"/></svg>
-            </div>
-          </div>
-
-          <div class="io-row">
-            <span class="io-label pos">↓ Income<b>+PKR 0.00</b></span>
-            <span class="io-label neg">↑ Expense<b>-PKR 9,500.00</b></span>
-          </div>
-
-          <div class="mock-card">
-            <div class="seg-toggle"><span class="active">Expense</span><span>Income</span></div>
-            <div class="donut-row center">
-              <div class="donut" style="background:conic-gradient(var(--cat-transport) 0deg 95deg, var(--cat-food) 95deg 189deg, var(--cat-groceries) 189deg 265deg, var(--cat-work) 265deg 303deg, var(--cat-health) 303deg 360deg)"></div>
-              <div class="donut-total">PKR 9,500.00</div>
-              <div class="cat-chip-row">
-                <span class="cat-chip" style="background:var(--cat-transport)"><span class="sw"></span>Transport · 2,500</span>
-                <span class="cat-chip" style="background:var(--cat-food)"><span class="sw"></span>Food and Drink · 2,500</span>
-                <span class="cat-chip" style="background:var(--cat-groceries)"><span class="sw"></span>Groceries · 2,000</span>
-                <span class="cat-chip more">+2 more</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="alert-banner">
-            <svg class="ic"><use href="#i-warning"/></svg>
-            <span>1 budget needs your attention</span>
-            <svg class="ic ic-sm"><use href="#i-chevron"/></svg>
-          </div>
-
-          <div class="list-row" style="margin-top:2px">
-            <span class="icon-circle sm" style="background:var(--cat-transport)"><svg class="ic"><use href="#i-plane"/></svg></span>
-            <div class="row-text">Transport<small><svg class="ic ic-sm"><use href="#i-wallet"/></svg>Main Wallet</small></div>
-            <span class="row-amt neg">-PKR 2,500</span>
-          </div>
+        <div class="phone-screen">
+          <img src="assets/screenshots/home.jpg" alt="Coinly Home dashboard showing total balance, income/expense breakdown, and top spending categories" loading="eager">
         </div>
         <div class="float-card float-backup">
           <svg class="ic"><use href="#i-cloud"/></svg>
@@ -194,35 +137,19 @@
       <div class="feature-row reveal">
         <div class="feature-text">
           <span class="feature-num">01</span>
-          <h3>Multi-wallet tracking</h3>
-          <p>Keep cash, bank, and savings as separate wallets — each with its own starting
-            balance. Filter your Home and Timeline down to a single wallet whenever you want the
-            narrower view.</p>
+          <h3>Custom categories, organized your way</h3>
+          <p>A full set of expense and income categories out of the box, each with its own icon
+            and color — toggle any of them off, and every list respects it instantly.</p>
           <ul class="feature-points">
-            <li>Unlimited wallets, unlimited currencies</li>
-            <li>Deleting a wallet always warns you first</li>
-            <li>Every screen respects your active wallet filter</li>
+            <li>Separate expense and income category lists</li>
+            <li>Your own icon and color per category</li>
+            <li>Live transaction counts, right in the list</li>
           </ul>
         </div>
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <div class="mini-title">Wallets</div>
-              <div class="wallet-row">
-                <span class="icon-circle" style="background:var(--cat-income-business)"><svg class="ic"><use href="#i-wallet"/></svg></span>
-                <div class="row-text">Cash<small>PKR</small></div>
-                <span class="row-amt pos">PKR 12,400</span>
-              </div>
-              <div class="wallet-row">
-                <span class="icon-circle" style="background:var(--cat-work)"><svg class="ic"><use href="#i-wallet"/></svg></span>
-                <div class="row-text">Bank Account<small>PKR</small></div>
-                <span class="row-amt pos">PKR 58,920</span>
-              </div>
-              <div class="wallet-row">
-                <span class="icon-circle" style="background:var(--cat-transport)"><svg class="ic"><use href="#i-wallet"/></svg></span>
-                <div class="row-text">Savings<small>PKR</small></div>
-                <span class="row-amt pos">PKR 13,000</span>
-              </div>
+              <img src="assets/screenshots/categories.jpg" alt="Coinly Manage Categories screen showing colorful expense categories with icons" loading="lazy">
             </div>
           </div>
         </div>
@@ -243,24 +170,7 @@
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <div class="mini-title">Budgets</div>
-              <div class="budget-card">
-                <div class="budget-icons">
-                  <span class="icon-circle sm" style="background:var(--cat-food)"><svg class="ic"><use href="#i-food"/></svg></span>
-                  <span class="icon-circle sm" style="background:var(--cat-groceries)"><svg class="ic"><use href="#i-cart"/></svg></span>
-                  <span class="icon-circle sm" style="background:var(--cat-health)"><svg class="ic"><use href="#i-people"/></svg></span>
-                  <span class="icon-circle sm" style="background:var(--cat-transport)"><svg class="ic"><use href="#i-plane"/></svg></span>
-                </div>
-                <div class="budget-top">Monthly Budget<b class="warn amt-row">PKR 8,500<span class="of"> of 10,000</span></b></div>
-                <small>4 categories · Monthly</small>
-                <div class="float-bar"><div class="float-bar-fill warn" style="width:85%"></div></div>
-                <div class="budget-breakdown">
-                  <div class="b-row"><span class="dot" style="background:var(--cat-food)"></span><b>Food and Drink</b>2,500 · 29%</div>
-                  <div class="b-row"><span class="dot" style="background:var(--cat-groceries)"></span><b>Groceries</b>2,000 · 23%</div>
-                  <div class="b-row"><span class="dot" style="background:var(--cat-health)"></span><b>Health Care</b>1,500 · 17%</div>
-                  <div class="b-row"><span class="dot" style="background:var(--cat-transport)"></span><b>Transport</b>2,500 · 29%</div>
-                </div>
-              </div>
+              <img src="assets/screenshots/budget.jpg" alt="Coinly Budget screen showing a Monthly Budget expanded with its per-category breakdown" loading="lazy">
             </div>
           </div>
         </div>
@@ -269,27 +179,19 @@
       <div class="feature-row reveal">
         <div class="feature-text">
           <span class="feature-num">03</span>
-          <h3>A dashboard that actually tells you something</h3>
-          <p>Balance, an income/expense breakdown with week/month/year filters, a budget-alert
-            banner when it matters, and a quick top-categories list — all on Home, no digging.</p>
+          <h3>Every transaction, one searchable ledger</h3>
+          <p>Timeline groups everything by day with a running daily total, filters down to just
+            Income or Expense, and shows attached receipts right in the list — swipe to delete.</p>
           <ul class="feature-points">
-            <li>Category breakdown chart with drill-down into transactions</li>
-            <li>Skeleton loading instead of blank screens</li>
-            <li>Light, Dark, or System theme</li>
+            <li>Day-grouped ledger with per-day totals</li>
+            <li>Filter by All, Income, or Expense</li>
+            <li>Attached receipts show inline</li>
           </ul>
         </div>
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <div class="mini-title">Overview</div>
-              <div class="donut-row center">
-                <div class="donut small" style="background:conic-gradient(var(--cat-transport) 0deg 95deg, var(--cat-food) 95deg 189deg, var(--cat-groceries) 189deg 265deg, var(--cat-work) 265deg 303deg, var(--cat-health) 303deg 360deg)"></div>
-              </div>
-              <div class="legend-mini">
-                <span><i style="background:var(--cat-food)"></i>Food and Drink<b>26%</b></span>
-                <span><i style="background:var(--cat-transport)"></i>Transport<b>26%</b></span>
-                <span><i style="background:var(--cat-groceries)"></i>Groceries<b>21%</b></span>
-              </div>
+              <img src="assets/screenshots/timeline.jpg" alt="Coinly Timeline screen showing transactions grouped by day with running totals" loading="lazy">
             </div>
           </div>
         </div>
@@ -311,25 +213,7 @@
         <div class="feature-visual">
           <div class="mini-phone">
             <div class="mini-screen">
-              <div class="mini-title">Add Transaction</div>
-              <div class="add-toggle"><span class="active">Expense</span><span>Income</span></div>
-              <div class="recent-row">
-                <span class="chip small">Health Care</span>
-                <span class="chip small active">Food and Drink</span>
-                <span class="chip small">Groceries</span>
-              </div>
-              <div class="cat-row">
-                <span class="icon-circle sm" style="background:var(--cat-food)"><svg class="ic"><use href="#i-food"/></svg></span>
-                Food and Drink
-                <svg class="ic chev"><use href="#i-chevron"/></svg>
-              </div>
-              <div class="add-amount">PKR 1,000.0</div>
-              <div class="budget-hint">
-                <div class="bh-top"><span>Counts toward Monthly Budget</span><b>95%</b></div>
-                <div class="float-bar"><div class="float-bar-fill warn" style="width:95%"></div></div>
-                <small>PKR 500.00 left after this</small>
-              </div>
-              <div class="add-cta">Add Expense · PKR 1,000.00</div>
+              <img src="assets/screenshots/add-transaction.jpg" alt="Coinly Add Transaction screen showing recent category chips and a live monthly budget hint" loading="lazy">
             </div>
           </div>
         </div>
