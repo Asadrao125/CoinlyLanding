@@ -33,9 +33,10 @@ npx serve .
 
 ## Before launch
 
-- Replace the `coinly.app` placeholder domain with the real one everywhere it appears: the
-  canonical/OG/Twitter URLs in `index.html`, `privacy.html`, `terms.html`, and the URLs in
-  `robots.txt` and `sitemap.xml`.
+- Canonical/OG/Twitter URLs currently point at `https://coinly-web.vercel.app` (in `index.html`,
+  `privacy.html`, `terms.html`, `robots.txt`, `sitemap.xml`). If a custom domain is added later,
+  update all five files to match — a stale `og:image` URL is why link previews (WhatsApp, etc.)
+  can silently show no preview at all.
 - Phone mockups use real screenshots from `assets/screenshots/` — swap them for fresh ones as the
   app's UI evolves. Each `.shot img` sizes itself from the image's own natural dimensions (no
   cropping), so a differently-sized replacement just reflows cleanly instead of clipping.
