@@ -236,49 +236,10 @@ img { max-width: 100%; display: block; }
   transform: translate(-50%, -50%);
   z-index: 0;
 }
-.phone-frame {
-  position: relative;
-  z-index: 1;
-  width: 280px;
-  background: #0B1614;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 42px;
-  padding: 12px;
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.55), 0 0 0 8px rgba(255,255,255,0.02) inset;
-}
-.phone-screen {
-  width: 100%;
-  border-radius: 32px;
-  overflow: hidden;
-  position: relative;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Dummy status bar - the real one (carrier/wifi/battery %) is cropped out of
-   the screenshot itself; this fills that space with a clean, generic one so
-   rounded top corners never clip real on-screen content. */
-.fake-statusbar {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--device-bg);
-  color: var(--device-text);
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-.phone-screen .fake-statusbar { height: 34px; padding: 0 18px; font-size: 0.78rem; }
-.mini-screen .fake-statusbar { height: 26px; padding: 0 14px; font-size: 0.62rem; }
-.fake-statusbar .status-icons { display: flex; align-items: center; gap: 5px; }
-.fake-statusbar .status-icons svg { display: block; }
-.phone-screen .fake-statusbar .status-icons svg { height: 11px; width: auto; }
-.mini-screen .fake-statusbar .status-icons svg { height: 8px; width: auto; }
-
-/* No forced aspect-ratio or object-fit cropping here - each screenshot keeps
-   its own real proportions in full, including the bottom nav bar, so the
-   container's height is simply whatever the image needs. */
+/* Just the real screenshot, status bar already cropped out of the image
+   itself, with a small corner radius. No bezel, no fake chrome. */
+.phone-frame { position: relative; width: 280px; }
+.phone-screen { border-radius: 14px; overflow: hidden; display: block; }
 .shot { width: 100%; }
 .shot img { width: 100%; height: auto; display: block; }
 
@@ -357,22 +318,8 @@ img { max-width: 100%; display: block; }
 }
 
 .feature-visual { display: flex; justify-content: center; }
-.mini-phone {
-  width: 230px;
-  border-radius: 34px;
-  padding: 10px;
-  background: #171f1c;
-  border: 1px solid rgba(255,255,255,0.16);
-  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.45);
-}
-.mini-screen {
-  border-radius: 26px;
-  overflow: hidden;
-  position: relative;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-}
+.mini-phone { width: 230px; }
+.mini-screen { border-radius: 14px; overflow: hidden; display: block; }
 
 .feature-visual.dual { flex-wrap: wrap; gap: 26px; }
 .mini-phone-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
