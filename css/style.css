@@ -243,23 +243,6 @@ img { max-width: 100%; display: block; }
 .shot { width: 100%; }
 .shot img { width: 100%; height: auto; display: block; }
 
-.float-card {
-  position: absolute;
-  background: var(--device-surface);
-  color: var(--device-text);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-card);
-  padding: 10px 14px;
-  font-size: 0.75rem;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-}
-.float-backup { top: 50%; right: -120px; }
-.float-backup .ic { width: 16px; height: 16px; stroke: var(--primary); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
 /* ===== Trust / privacy ===== */
 .trust { padding: 60px 24px 90px; }
 .trust-head { text-align: center; max-width: 560px; margin: 0 auto 44px; }
@@ -471,7 +454,6 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 600px) {
   .phone-frame { width: 230px; }
-  .float-backup { display: none; }
   .glow { width: 300px; height: 300px; }
 }
 
