@@ -361,8 +361,8 @@ img { max-width: 100%; display: block; }
   width: 230px;
   border-radius: 34px;
   padding: 10px;
-  background: #0B1614;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #171f1c;
+  border: 1px solid rgba(255,255,255,0.16);
   box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.45);
 }
 .mini-screen {
@@ -381,6 +381,24 @@ img { max-width: 100%; display: block; }
 @media (max-width: 520px) {
   .feature-visual.dual { gap: 14px; }
   .feature-visual.dual .mini-phone { width: 150px; }
+}
+
+/* ===== Screenshot gallery ===== */
+.screens-gallery { padding: 20px 24px 100px; }
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.gallery-grid .mini-phone-group { gap: 10px; }
+.gallery-grid .mini-phone { width: 128px; }
+.gallery-grid .mini-caption { font-size: 0.72rem; text-align: center; }
+@media (max-width: 480px) {
+  .gallery-grid { gap: 22px 14px; }
+  .gallery-grid .mini-phone { width: 104px; }
 }
 
 /* ===== Pricing ===== */
