@@ -331,6 +331,46 @@ img { max-width: 100%; display: block; }
   .gallery-grid .mini-phone { width: 104px; }
 }
 
+/* ===== Beta APK ===== */
+.beta { padding: 20px 24px 100px; }
+.beta-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+.beta-info h3 { font-size: 1.2rem; margin: 0 0 12px; }
+.beta-info p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0 0 12px; }
+.beta-info .beta-note { font-size: 0.85rem; margin: 0; }
+.beta-download {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 26px;
+  border-radius: 999px;
+  background: var(--text-primary);
+  color: var(--bg);
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform 0.18s ease;
+}
+.beta-download:hover { transform: translateY(-2px); }
+.beta-download span { display: flex; flex-direction: column; line-height: 1.3; }
+.beta-download small { font-weight: 600; font-size: 0.72rem; opacity: 0.7; }
+@media (prefers-color-scheme: dark) {
+  .beta-download { background: var(--primary); color: #052420; }
+}
+@media (max-width: 720px) {
+  .beta-card { flex-direction: column; text-align: center; padding: 32px 24px; }
+  .beta-download { width: 100%; justify-content: center; }
+}
+
 /* ===== Pricing ===== */
 .pricing { padding: 40px 24px 100px; }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
