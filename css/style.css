@@ -239,7 +239,7 @@ img { max-width: 100%; display: block; }
 /* Just the real screenshot, status bar already cropped out of the image
    itself, with a small corner radius. No bezel, no fake chrome. */
 .phone-frame { position: relative; width: 280px; }
-.phone-screen { border-radius: 14px; overflow: hidden; display: block; border: 1px solid rgba(255,255,255,0.14); }
+.phone-screen { border-radius: 8px; overflow: hidden; display: block; border: 1px solid rgba(255,255,255,0.14); }
 .shot { width: 100%; }
 .shot img { width: 100%; height: auto; display: block; }
 
@@ -302,7 +302,7 @@ img { max-width: 100%; display: block; }
 
 .feature-visual { display: flex; justify-content: center; }
 .mini-phone { width: 230px; }
-.mini-screen { border-radius: 14px; overflow: hidden; display: block; border: 1px solid rgba(255,255,255,0.14); }
+.mini-screen { border-radius: 8px; overflow: hidden; display: block; border: 1px solid rgba(255,255,255,0.14); }
 
 .feature-visual.dual { flex-wrap: wrap; gap: 26px; }
 .mini-phone-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
