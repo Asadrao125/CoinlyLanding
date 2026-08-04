@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — Coinly</title>
+<meta name="description" content="How to delete your Coinly account and all associated data, including your Google Drive backup. In-app steps and a manual request option.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://coinly-web.vercel.app/delete-account.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .legal { max-width: 760px; margin: 0 auto; padding: 60px 24px 100px; line-height: 1.7; }
+  .legal h1 { font-size: 2.1rem; margin-bottom: 8px; }
+  .legal .updated { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 40px; }
+  .legal h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+  .legal p, .legal li { color: var(--text-secondary); font-size: 0.98rem; }
+  .legal ul, .legal ol { padding-left: 20px; margin-bottom: 16px; }
+  .legal ul { list-style: disc; }
+  .legal ol { list-style: decimal; }
+  .legal li { margin-bottom: 8px; }
+  .legal strong { color: var(--text-primary); }
+  .steps { background: var(--surface); border: 1px solid var(--divider); border-radius: 14px;
+           padding: 24px 24px 8px; margin: 20px 0 28px; }
+  .steps h3 { font-size: 1rem; margin-bottom: 12px; }
+  .notice { border-left: 3px solid var(--primary); background: rgba(14,165,160,0.07);
+            border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 24px 0; }
+  .notice p { margin: 0; }
+  .table-wrap { overflow-x: auto; margin: 16px 0 28px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--divider); }
+  th { color: var(--text-primary); font-weight: 600; }
+  td { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg width="30" height="30" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+          <rect width="108" height="108" rx="24" fill="#0EA5A0"/>
+          <path fill="#FFFFFF" d="M36,36 H72 A8,8 0 0 1 80,44 V64 A8,8 0 0 1 72,72 H36 A8,8 0 0 1 28,64 V44 A8,8 0 0 1 36,36 Z"/>
+          <path fill="#0EA5A0" d="M54,47 H72 A4,4 0 0 1 76,51 V57 A4,4 0 0 1 72,61 H54 A4,4 0 0 1 50,57 V51 A4,4 0 0 1 54,47 Z"/>
+        </svg>
+      </span>
+      <span class="brand-name">Coinly</span>
+    </a>
+    <a href="index.html" class="btn btn-outline btn-nav" style="display:inline-flex;">Back to home</a>
+  </nav>
+</header>
+
+<main class="legal">
+  <h1>Delete your account &amp; data</h1>
+  <p class="updated">Last updated: August 5, 2026</p>
+
+  <p>You can delete your Coinly account and everything associated with it at any time, directly
+  from inside the app. No email, no waiting, and no need to ask us.</p>
+
+  <div class="steps">
+    <h3>Delete from inside the app</h3>
+    <ol>
+      <li>Open Coinly and go to the <strong>More</strong> tab.</li>
+      <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+      <li>Read the confirmation, tick <strong>“I understand this can’t be undone”</strong>, then
+        tap <strong>Delete Account</strong>.</li>
+    </ol>
+    <p>Deletion happens immediately. The app signs you out and returns to its first-run state, as
+    though it had just been installed.</p>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Data</th><th>What happens</th></tr>
+      <tr><td>Wallets, transactions, categories, budgets</td><td>Permanently deleted from your device</td></tr>
+      <tr><td>Your Google Drive backup</td><td>Permanently deleted from your Drive</td></tr>
+      <tr><td>Receipt photos saved in the app</td><td>Permanently deleted from your device</td></tr>
+      <tr><td>Your name, email and profile photo</td><td>Permanently deleted from your device</td></tr>
+      <tr><td>Purchase record (if you subscribed)</td><td>Unlinked from this device — see below</td></tr>
+    </table>
+  </div>
+
+  <div class="notice">
+    <p><strong>This cannot be undone.</strong> Coinly has no servers, so there is no copy of your
+    data anywhere for us to restore from. Once your device data and your Drive backup are gone,
+    they are gone. If you only want to switch accounts or free up space, use <strong>Log Out</strong>
+    instead — that clears the device but leaves your Drive backup intact so you can restore it later.</p>
+  </div>
+
+  <h2>Your Google account itself</h2>
+  <p>Deleting your Coinly account does not touch your Google account. Coinly only signs you in and
+  removes its own hidden backup folder from your Drive. You can also revoke Coinly's access at any
+  time from your
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google account permissions page</a>.</p>
+
+  <h2>Subscriptions and purchases</h2>
+  <p>Deleting your account unlinks any Coinly purchase from this device, but it does
+  <strong>not</strong> cancel a subscription — subscriptions are managed by Google Play, not by us.
+  To cancel, go to <strong>Google Play → Subscriptions</strong>. Google retains its own billing
+  records under its
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>,
+  which we have no control over.</p>
+
+  <h2>If you've already uninstalled the app</h2>
+  <p>Uninstalling deletes everything Coinly stored on your device, but it does not remove a Google
+  Drive backup, because that lives in your own Drive. To remove it, either reinstall Coinly, sign
+  in, and use <strong>Delete Account</strong>, or remove Coinly's hidden app data directly from
+  <a href="https://drive.google.com/drive/settings" target="_blank" rel="noopener">Google Drive settings</a>
+  under “Manage apps”.</p>
+
+  <h2>Request deletion by email</h2>
+  <p>If you can't access the app for any reason, email
+  <a href="mailto:raoasad125@gmail.com?subject=Coinly%20account%20deletion%20request">raoasad125@gmail.com</a>
+  from the address you signed in with, with the subject “Coinly account deletion request”. We'll
+  confirm within 7 days and talk you through removing anything that remains.</p>
+  <p>Because Coinly stores nothing on its own servers, there is generally nothing for us to delete
+  on our side — the data is on your device and in your own Drive, both of which the steps above
+  put entirely under your control.</p>
+
+  <h2>Questions</h2>
+  <p>See our <a href="privacy.html">Privacy Policy</a> for what Coinly collects and why, or reach
+  out at <a href="mailto:raoasad125@gmail.com">raoasad125@gmail.com</a>.</p>
+</main>
+
+<footer class="footer">
+  <div class="container footer-bottom">
+    <span>© 2026 Coinly. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
