@@ -34,7 +34,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=4">
+<!-- Set before first paint: every scroll-reveal below starts at opacity 0 and is only
+     brought back by JS. Without this flag, a failed or blocked script would leave the
+     entire page blank rather than merely un-animated. -->
+<script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
 {
@@ -211,13 +215,26 @@
             <li>Live transaction counts, right in the list</li>
           </ul>
         </div>
-        <div class="feature-visual">
-          <div class="mini-phone">
-            <div class="mini-screen">
-              <div class="shot">
-                <img src="assets/screenshots/categories.jpg" alt="Coinly Manage Categories screen showing colorful expense categories with icons" loading="lazy">
+        <div class="feature-visual dual">
+          <div class="mini-phone-group">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="shot">
+                  <img src="assets/screenshots/categories.jpg" alt="Coinly Manage Categories screen showing colorful expense categories with icons and per-category transaction counts" loading="lazy">
+                </div>
               </div>
             </div>
+            <span class="mini-caption">Every category, on or off</span>
+          </div>
+          <div class="mini-phone-group">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="shot">
+                  <img src="assets/screenshots/add-category.jpg" alt="Coinly Add Category screen showing the icon and colour pickers for a new category" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <span class="mini-caption">Pick its icon and colour</span>
           </div>
         </div>
       </div>
@@ -576,6 +593,6 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=4"></script>
 </body>
 </html>

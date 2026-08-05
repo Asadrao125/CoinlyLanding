@@ -39,6 +39,75 @@ const observer = new IntersectionObserver(
 );
 revealEls.forEach((el) => observer.observe(el));
 
+// Safety net: anything already within the viewport when the page loads is revealed outright.
+// IntersectionObserver normally fires for these on its first pass, but if it is unavailable or
+// throttled the content must never be left invisible - it is real page copy, not decoration.
+requestAnimationFrame(() => {
+  revealEls.forEach((el) => {
+    const box = el.getBoundingClientRect();
+    if (box.top < window.innerHeight && box.bottom > 0) el.classList.add('in-view');
+  });
+});
+
+// ---- Reading progress bar ----
+const progressBar = document.createElement('div');
+progressBar.className = 'scroll-progress';
+document.body.appendChild(progressBar);
+
+// ---- Nav: elevate once scrolled, and light up the section you're actually reading ----
+const navWrap = document.getElementById('navWrap');
+const navAnchors = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+// Sorted by position in the page, NOT by their order in the nav - the Privacy strip sits above
+// Features in the document but fourth in the menu, and "last section I've scrolled past" is only
+// meaningful walking down the page.
+const sections = navAnchors
+  .map((a) => document.getElementById(a.getAttribute('href').slice(1)))
+  .filter(Boolean)
+  .sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+
+// Matches css scroll-padding-top, so "which section am I in" agrees with where a click lands.
+const navOffset = () => (navWrap?.offsetHeight || 80) + 20;
+
+function onScroll() {
+  const y = window.scrollY;
+
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  progressBar.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
+
+  navWrap?.classList.toggle('scrolled', y > 12);
+
+  // The last section whose top has passed the nav is the one being read. Falls back to the
+  // first link at the very top of the page, and force-selects the last one at the very
+  // bottom, where a short final section can never win on its own.
+  let activeId = sections.length ? sections[0].id : null;
+  const line = y + navOffset();
+  sections.forEach((sec) => {
+    if (sec.getBoundingClientRect().top + y <= line) activeId = sec.id;
+  });
+  if (max - y < 4 && sections.length) activeId = sections[sections.length - 1].id;
+
+  navAnchors.forEach((a) => {
+    a.classList.toggle('active', a.getAttribute('href') === `#${activeId}`);
+  });
+}
+
+let ticking = false;
+window.addEventListener(
+  'scroll',
+  () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      onScroll();
+      ticking = false;
+    });
+  },
+  { passive: true }
+);
+window.addEventListener('resize', onScroll, { passive: true });
+onScroll();
+
 // ---- Waitlist form ----
 // No backend wired up yet — this opens the visitor's email client pre-addressed to you.
 // Swap this handler for a real waitlist service (Formspree, Mailchimp, ConvertKit, etc.)
