@@ -77,10 +77,12 @@ function onScroll() {
 
   navWrap?.classList.toggle('scrolled', y > 12);
 
-  // The last section whose top has passed the nav is the one being read. Falls back to the
-  // first link at the very top of the page, and force-selects the last one at the very
-  // bottom, where a short final section can never win on its own.
-  let activeId = sections.length ? sections[0].id : null;
+  // The last section whose top has passed the nav is the one being read. Starts as null on
+  // purpose: at the top of the page you are in the hero, which has no nav link of its own, so
+  // nothing should be lit. Seeding this with the first section instead lit "Privacy" - the
+  // topmost section in the document - before the visitor had scrolled anywhere near it.
+  // The very bottom force-selects the last link, which a short final section can never win.
+  let activeId = null;
   const line = y + navOffset();
   sections.forEach((sec) => {
     if (sec.getBoundingClientRect().top + y <= line) activeId = sec.id;
