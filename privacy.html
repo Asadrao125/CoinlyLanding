@@ -55,7 +55,8 @@
   <h2>Data stored on your device</h2>
   <p>All of your wallets, transactions, categories, budgets, and any receipt photos you attach are
   stored locally on your device using a local database. This data never leaves your device unless
-  you explicitly enable backup.</p>
+  you explicitly enable backup — and receipt photos never leave it at all, since a backup contains
+  only your wallets, categories, transactions and budgets, never the images themselves.</p>
 
   <h2>Using Coinly without an account</h2>
   <p>Signing in is optional. You can install Coinly and use every tracking feature — wallets,
@@ -100,6 +101,12 @@
   Full instructions, including what happens to subscriptions and how to proceed if you have already
   uninstalled the app, are on our
   <a href="delete-account.html">account deletion page</a>.</p>
+
+  <h2>Exchange rates</h2>
+  <p>To convert your wallets into your Base Currency, Coinly fetches published exchange rates from
+  <a href="https://open.er-api.com" target="_blank" rel="noopener">open.er-api.com</a> once a day and
+  caches them on your device. The request asks for rates and nothing else — it carries no account, no
+  identifier, and none of your financial data.</p>
 
   <h2>Analytics &amp; advertising</h2>
   <p>Coinly contains no third-party advertising SDKs and no analytics or tracking SDKs. We do not
